@@ -1,0 +1,6 @@
+!.*.js
+**/dist/**
+**/package-lock.json
+cypress/screenshots
+allure-results
+allure-report

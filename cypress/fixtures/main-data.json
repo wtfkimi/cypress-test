@@ -1,0 +1,28 @@
+{
+	"btn": [
+		"Home",
+		"Open Tab",
+		"Alert",
+		"Confirm",
+		"Hide",
+		"Show",
+		"Mouse Hover"
+	],
+	"backgroundColor": "rgb(44, 189, 154)",
+	"href": "https://easygenerator.com/",
+	"_blanc": "_blank",
+	"alertText": "Hello , share this practice page and share your knowledge",
+	"myName": "end1fromearth",
+	"alertTextWithName": "Hello end1fromearth, share this practice page and share your knowledge",
+	"alertTextConfirm": "Hello end1fromearth, Are you sure you want to confirm?",
+	"options": ["Option1", "Option2", "Option3"],
+	"cypressImg": "cypress.png",
+	"topAttribute": "#top",
+	"reload": "Reload",
+	"socialMediaLinks": {
+		"facebookLink": "https://www.facebook.com/easygenerator/",
+		"twitterLink": "https://twitter.com/easygenerator",
+		"youTubeLink": "https://www.youtube.com/user/easygenerator"
+	},
+	"alertTextFromFile": "Hello Hello from Easygenerator, share this practice page and share your knowledge"
+}

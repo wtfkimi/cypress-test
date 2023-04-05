@@ -1,0 +1,46 @@
+{
+	"name": "cypress-typescript-test",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"lint": "eslint --fix . && prettier --config ./.pretterrc --write .",
+		"build": "tsc --build tsconfig.json",
+		"chrome-run": "npx cypress run --headless -b chrome --env allure=true",
+		"chrome-run-headed": "cypress run --headed -b chrome --env allure=true",
+		"open:cypress": "cypress open",
+		"allure:clear": "rm -r allure-results/ allure-report cypress/screenshots || true",
+		"allure:report": "allure generate allure-results --clean -o allure-report",
+		"allure:history": "mv -f allure-report/history allure-results/history && rm -r allure-report || true",
+		"allure:open": "allure open",
+		"start-server": "node index.js"
+	},
+	"keywords": [
+		"testing"
+	],
+	"author": "viacheslav.bondariev",
+	"devDependencies": {
+		"@cypress/webpack-preprocessor": "^5.12.0",
+		"@shelex/cypress-allure-plugin": "^2.38.1",
+		"@types/mocha": "^9.1.1",
+		"@types/node": "^18.0.0",
+		"@typescript-eslint/eslint-plugin": "^5.57.1",
+		"@typescript-eslint/parser": "^5.57.0",
+		"cypress": "^12.4.1",
+		"eslint": "^8.2.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-config-airbnb-typescript": "^17.0.0",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-import": "^2.27.5",
+		"eslint-plugin-prettier": "^4.2.1",
+		"os-browserify": "^0.3.0",
+		"path-browserify": "^1.0.1",
+		"prettier": "^2.8.7",
+		"ts-loader": "^9.3.0",
+		"typescript": "^4.7.3",
+		"util": "^0.12.5",
+		"webpack": "^5.73.0"
+	},
+	"dependencies": {
+		"express": "^4.18.2"
+	}
+}

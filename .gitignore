@@ -1,0 +1,9 @@
+node_modules
+videos
+screenshots
+reports
+dist
+.idea
+cypress/screenshots
+allure-results
+allure-report
