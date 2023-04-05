@@ -64,7 +64,7 @@ Then install dependencies:
 
 Then run server:
 
-`node index.js`
+`npm run start-server`
 
 Then run tests:
 
